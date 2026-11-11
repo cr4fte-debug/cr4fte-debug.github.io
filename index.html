@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
+<meta name="description" content="Présentation de Hermes Suivi Coach, une installation personnelle de suivi sportif utilisant Google Sheets et des assistants IA.">
+<link rel="icon" href="data:,">
+<link rel="canonical" href="https://cr4fte-debug.github.io/">
+<title>Hermes Suivi Coach — Présentation</title>
+<style>
+:root{color-scheme:light;--paper:#fbfaf6;--ink:#20342b;--muted:#525e57;--line:#d3dbd4;--accent:#245d44}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.7 Arial,Helvetica,sans-serif}main,header,footer{max-width:76ch;margin:auto;padding:24px}header{border-bottom:1px solid var(--line);display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap}header a,footer a{display:inline-block;padding:8px 0}a{color:var(--accent);text-underline-offset:4px}a:focus-visible{outline:3px solid var(--accent);outline-offset:5px}h1,h2{font-family:Georgia,'Times New Roman',serif;line-height:1.2}h1{font-size:clamp(2.1rem,6vw,3.2rem);font-weight:normal;margin:12px 0 24px}h2{font-size:1.55rem;margin-top:38px}p,li{max-width:70ch}code{overflow-wrap:anywhere}.eyebrow,footer{color:var(--muted);font-size:.9rem}.policy{display:inline-block;padding:12px 0;font-weight:bold}footer{border-top:1px solid var(--line);margin-top:28px}@media(max-width:500px){main,header,footer{padding:20px}body{font-size:16px}}
+</style>
+</head>
+<body>
+<header><strong>Hermes Suivi Coach</strong><nav aria-label="Navigation"><a href="confidentialite.html">Confidentialité</a></nav></header>
+<main>
+<p class="eyebrow">Installation personnelle · Présentation de l’application</p>
+<h1>Un suivi sportif personnel, dans un tableau privé.</h1>
+<p><strong>Hermes Suivi Coach</strong> permet à son utilisateur de tenir un programme d’entraînement et un journal de séances dans Google Sheets, avec l’aide de ses assistants IA Hermes et Coach.</p>
+<h2>Fonctionnement</h2>
+<p>Le classeur sépare le programme prévu, les séances réellement effectuées et le détail des exercices. L’utilisateur peut le renseigner directement dans Google Sheets ou transmettre les informations à son assistant, par exemple dans une conversation Telegram lorsque ce canal est configuré.</p>
+<p>Les assistants peuvent consulter et compléter le classeur autorisé pour assurer le suivi et proposer des adaptations. Le programme prévu reste distinct de l’historique des réalisations. Il ne s’agit pas d’un dispositif médical et les réponses ne remplacent pas un professionnel de santé.</p>
+<h2>Pourquoi une connexion Google ?</h2>
+<p>L’autorisation OAuth permet de lire et modifier le fichier Google Sheets utilisé pour le suivi. L’intégration demande le droit <code>drive.file</code>, limité aux fichiers créés ou ouverts avec cette application, et non un accès général à Gmail, à l’agenda ou à l’intégralité de Google Drive. L’usage de cette installation est en outre limité à son classeur de suivi désigné.</p>
+<p>Hermes et Coach sont des profils logiciels, pas deux personnes Google distinctes. Chacun utilise son autorisation sur le compte choisi par l’utilisateur. Celui-ci peut retirer l’accès depuis les paramètres de sécurité de son compte Google.</p>
+<h2>Ce site ne contient pas le suivi</h2>
+<p>Ce site public présente uniquement l’application et ses pratiques de confidentialité. Il n’héberge ni les séances, ni le classeur, ni les identifiants de connexion. Il n’offre pas d’inscription à un service public de coaching.</p>
+<a class="policy" href="confidentialite.html">Lire la politique de confidentialité →</a>
+<h2>Responsable et contact</h2>
+<p>Cette installation personnelle est administrée par <a href="https://github.com/cr4fte-debug">cr4fte-debug</a>. Pour une question privée concernant l’accès Google ou les données, utilisez l’adresse d’assistance indiquée sur l’écran de consentement Google de l’application. Ne publiez pas de données de santé ou d’identifiants dans les espaces publics de GitHub.</p>
+</main>
+<footer>Hermes Suivi Coach · Documentation publique de l’installation personnelle.<br>Installation indépendante : ce site n’est pas un service officiel de Google, GitHub, OpenAI ou de l’éditeur de Hermes Agent.</footer>
+</body>
+</html>

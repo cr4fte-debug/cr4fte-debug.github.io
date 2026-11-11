@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
+<meta name="description" content="Pratiques de confidentialité de l’installation personnelle Hermes Suivi Coach : Google Sheets, autorisations, traitements IA, stockage et révocation.">
+<link rel="icon" href="data:,">
+<link rel="canonical" href="https://cr4fte-debug.github.io/confidentialite.html">
+<title>Confidentialité — Hermes Suivi Coach</title>
+<style>
+:root{color-scheme:light;--paper:#fbfaf6;--ink:#20342b;--muted:#525e57;--line:#d3dbd4;--accent:#245d44}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.7 Arial,Helvetica,sans-serif}main,header,footer{max-width:76ch;margin:auto;padding:24px}header{border-bottom:1px solid var(--line);display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap}header a,footer a{display:inline-block;padding:8px 0}a{color:var(--accent);text-underline-offset:4px}a:focus-visible{outline:3px solid var(--accent);outline-offset:5px}h1,h2{font-family:Georgia,'Times New Roman',serif;line-height:1.2}h1{font-size:clamp(2rem,6vw,2.8rem);font-weight:normal;margin:12px 0 24px}h2{font-size:1.4rem;margin-top:34px}p,li{max-width:70ch}code{overflow-wrap:anywhere}.meta,footer{color:var(--muted);font-size:.9rem}footer{border-top:1px solid var(--line);margin-top:28px}@media(max-width:500px){main,header,footer{padding:20px}body{font-size:16px}}
+</style>
+</head>
+<body>
+<header><strong>Hermes Suivi Coach</strong><nav aria-label="Navigation"><a href="index.html">Présentation</a></nav></header>
+<main>
+<h1>Politique de confidentialité</h1>
+<p class="meta">Version du 11 novembre 2026 · Installation personnelle administrée par cr4fte-debug</p>
+<h2>1. Objet et périmètre</h2>
+<p>Hermes Suivi Coach est une installation personnelle destinée au suivi de l’entraînement de son utilisateur. Cette politique décrit l’utilisation du classeur Google Sheets autorisé, des conversations avec les assistants et de ce site de présentation. Le site ne propose pas de service public d’inscription ou de collecte de données sportives.</p>
+<h2>2. Informations utilisées</h2>
+<p>Le suivi peut contenir les informations fournies volontairement : programme, dates et contenu des séances, exercices, séries, répétitions, charges et leurs conventions, durée, effort perçu, récupération et remarques. Les remarques de fatigue, de douleur ou d’état physique peuvent être sensibles ; seules les informations utiles au suivi doivent être renseignées. Une donnée absente ne doit pas être inventée.</p>
+<p>L’intégration Google utilise également les métadonnées nécessaires à la gestion du fichier, à la vérification du compte autorisé et des permissions, ainsi que des jetons OAuth permettant les accès consentis. Elle ne demande pas le mot de passe Google de l’utilisateur.</p>
+<h2>3. Finalités et accès Google</h2>
+<p>Les informations servent à retrouver le programme, consigner ce qui a été réalisé, observer les évolutions et préparer des réponses ou adaptations demandées par l’utilisateur. L’application n’est pas destinée à établir un diagnostic ou à remplacer un professionnel de santé.</p>
+<p>Le droit Google demandé est <code>https://www.googleapis.com/auth/drive.file</code> : il permet de créer et gérer les fichiers utilisés avec l’application. Il inclut techniquement leur suppression ; les règles de cette installation n’autorisent pas de suppression sans accord distinct. Les opérations ordinaires sont limitées au classeur de suivi désigné. Aucun accès Gmail ou Agenda, ni accès général à tout Drive, n’est demandé pour ce fonctionnement.</p>
+<h2>4. Traitements par des assistants IA</h2>
+<p>Les données pertinentes d’un échange ou d’une lecture du classeur peuvent être transmises au fournisseur du modèle IA configuré dans Hermes pour produire une réponse de suivi. À la date de cette version, les profils Hermes et Coach de cette installation utilisent une connexion OpenAI Codex. Les données traitées ne restent donc pas nécessairement exclusivement sur l’ordinateur local.</p>
+<p>La conservation et les éventuels usages par le fournisseur dépendent de l’offre, des conditions applicables et des réglages du compte. Ces réglages doivent être examinés avant d’y confier des informations sensibles ; cette page ne certifie pas qu’une option de non-entraînement a été activée ou auditée. L’installation ne met elle-même en œuvre aucun entraînement de modèle généraliste et n’exploite pas le suivi pour la publicité ou la vente de données.</p>
+<p>Le contenu partagé dans Telegram, lorsque ce canal est utilisé, transite aussi par Telegram. L’utilisateur peut choisir de saisir directement dans Sheets ou de limiter les informations envoyées dans une conversation.</p>
+<h2>5. Stockage, accès et sécurité</h2>
+<p>Le classeur est conservé sur Google Drive avec des permissions restreintes au compte propriétaire, sauf partage explicite ultérieur par l’utilisateur. Les profils logiciels Hermes et Coach peuvent agir au nom de ce même compte ; ils ne sont pas deux identités Google indépendantes.</p>
+<p>Les jetons OAuth des profils sont stockés séparément sur la machine qui exécute Hermes, dans des fichiers à accès local restreint. Les historiques de conversation, journaux de suivi et copies de travail peuvent également être conservés localement par Hermes. Une sauvegarde initiale du classeur au format Excel est conservée ; elle ne se synchronise pas automatiquement avec la version en ligne.</p>
+<p>Ces restrictions réduisent les risques mais ne constituent pas une garantie absolue de confidentialité ni un chiffrement de bout en bout de tous les traitements. Les personnes disposant d’un accès administratif à la machine ou au compte doivent être considérées comme pouvant accéder aux données.</p>
+<h2>6. Durée, corrections et suppression</h2>
+<p>Le suivi est conservé tant que son utilisateur souhaite maintenir cet historique. Aucune suppression automatique selon une durée fixe n’est configurée pour cette installation. L’utilisateur peut corriger le tableau et demander la suppression des copies locales ou historiques qu’il ne souhaite plus conserver ; les sauvegardes et la corbeille Google doivent être examinées séparément. Les durées propres à Google, OpenAI ou Telegram relèvent de leurs offres et politiques respectives.</p>
+<h2>7. Retirer l’autorisation Google</h2>
+<p>L’utilisateur peut révoquer l’accès de Hermes Suivi Coach depuis les <a href="https://myaccount.google.com/connections">connexions tierces de son compte Google</a>. La révocation empêche les accès ultérieurs avec cette autorisation ; elle n’efface pas automatiquement le classeur, les conversations, les sauvegardes ou les copies déjà conservées. Comme les deux profils utilisent le même compte et le même client OAuth, une révocation peut affecter les deux.</p>
+<h2>8. Confidentialité du site public</h2>
+<p>Les deux pages publiques sont de simples documents sans formulaire, script de suivi, publicité ou outil d’analyse d’audience ajouté par l’application. Elles n’affichent aucune séance, donnée de santé, clé, jeton ou lien vers le classeur privé.</p>
+<p>L’hébergement est assuré par GitHub Pages. GitHub indique enregistrer les adresses IP des visiteurs à des fins de sécurité. Consultez la <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">politique de confidentialité de GitHub</a> pour les traitements propres à cet hébergeur.</p>
+<h2>9. Contact et mises à jour</h2>
+<p>Responsable de l’installation : <a href="https://github.com/cr4fte-debug">cr4fte-debug</a>. Pour une question privée relative aux données ou à l’autorisation, utilisez l’adresse d’assistance présentée dans l’écran de consentement Google de Hermes Suivi Coach. Ne communiquez pas d’informations personnelles ou de secrets dans un ticket GitHub public.</p>
+<p>Cette politique doit être mise à jour si les fournisseurs, permissions, destinations des données ou modalités de conservation changent. Les règles d’utilisation des API Google restent applicables ; l’hébergement de cette page ne vaut pas validation de conformité par Google.</p>
+<p><a href="index.html">← Retour à la présentation</a></p>
+</main>
+<footer>Hermes Suivi Coach · Documentation de l’installation personnelle. Aucun accès au classeur n’est fourni par ce site.</footer>
+</body>
+</html>
